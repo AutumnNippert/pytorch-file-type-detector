@@ -61,6 +61,9 @@ def dirToFiles(input_dir_path, output_dir_path, x_dim, y_dim):
         file_path = os.path.join(input_dir_path, file)
         # get extension
         extension = os.path.splitext(file_path)[-1]
+        
+        if extension not in file_types:
+            continue
 
         image_name = file + '.png'
         image_path = os.path.join(output_dir_path, image_name)
