@@ -1,0 +1,6 @@
+test_data/
+train_data/
+test_data_unp/
+train_data_unp/
+*.csv
+*.pth
